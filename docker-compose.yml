@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  front:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: bash -c "yarn install --verbose && yarn dev"
+    ports:
+      - 8091:8091
+    volumes:
+      - ./:/var/www
+    tty: true
