@@ -10,3 +10,8 @@ services:
     volumes:
       - ./:/var/www
     tty: true
+    networks:
+      - selfanalysis-network
+networks:
+  selfanalysis-network:
+    external: true

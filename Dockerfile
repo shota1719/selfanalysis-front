@@ -6,4 +6,4 @@ WORKDIR /var/www
 # Configure host
 ENV HOST 0.0.0.0
 
-CMD ["yarn", "dev"]
+CMD ["sh", "-c", "yarn install && yarn dev"]
